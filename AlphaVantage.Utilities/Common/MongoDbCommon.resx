@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CollectionADName" xml:space="preserve">
+    <value>AD</value>
+  </data>
+  <data name="CollectionADOSCName" xml:space="preserve">
+    <value>ADOSC</value>
+  </data>
+  <data name="CollectionADXName" xml:space="preserve">
+    <value>ADX</value>
+  </data>
+  <data name="CollectionADXRName" xml:space="preserve">
+    <value>ADXR</value>
+  </data>
+  <data name="CollectionAPOName" xml:space="preserve">
+    <value>APO</value>
+  </data>
+  <data name="CollectionAROONName" xml:space="preserve">
+    <value>AROON</value>
+  </data>
+  <data name="CollectionAROONOSCName" xml:space="preserve">
+    <value>AROONOSC</value>
+  </data>
+  <data name="CollectionATRName" xml:space="preserve">
+    <value>ATR</value>
+  </data>
+  <data name="CollectionBBANDSName" xml:space="preserve">
+    <value>BBANDS</value>
+  </data>
+  <data name="CollectionBOPName" xml:space="preserve">
+    <value>BOP</value>
+  </data>
+  <data name="CollectionCCIName" xml:space="preserve">
+    <value>CCI</value>
+  </data>
+  <data name="CollectionCMOName" xml:space="preserve">
+    <value>CMO</value>
+  </data>
+  <data name="CollectionDEMAName" xml:space="preserve">
+    <value>DEMA</value>
+  </data>
+  <data name="CollectionDXName" xml:space="preserve">
+    <value>DX</value>
+  </data>
+  <data name="CollectionEMAName" xml:space="preserve">
+    <value>EMA</value>
+  </data>
+  <data name="CollectionEquitiesName" xml:space="preserve">
+    <value>Equities</value>
+  </data>
+  <data name="CollectionHT_DCPERIODName" xml:space="preserve">
+    <value>HT_DCPERIOD</value>
+  </data>
+  <data name="CollectionHT_DCPHASEName" xml:space="preserve">
+    <value>HT_DCPHASE</value>
+  </data>
+  <data name="CollectionHT_PHASORName" xml:space="preserve">
+    <value>HT_PHASOR</value>
+  </data>
+  <data name="CollectionHT_SINEName" xml:space="preserve">
+    <value>HT_SINE</value>
+  </data>
+  <data name="CollectionHT_TRENDLINEName" xml:space="preserve">
+    <value>HT_TRENDLINE</value>
+  </data>
+  <data name="CollectionHT_TRENDMODEName" xml:space="preserve">
+    <value>HT_TRENDMODE</value>
+  </data>
+  <data name="CollectionKAMAName" xml:space="preserve">
+    <value>KAMA</value>
+  </data>
+  <data name="CollectionMACDEXTName" xml:space="preserve">
+    <value>MACDEXT</value>
+  </data>
+  <data name="CollectionMACDName" xml:space="preserve">
+    <value>MACD</value>
+  </data>
+  <data name="CollectionMAMAName" xml:space="preserve">
+    <value>MAMA</value>
+  </data>
+  <data name="CollectionMFIName" xml:space="preserve">
+    <value>MFI</value>
+  </data>
+  <data name="CollectionMIDPOINTName" xml:space="preserve">
+    <value>MIDPOINT</value>
+  </data>
+  <data name="CollectionMIDPRICEName" xml:space="preserve">
+    <value>MIDPRICE</value>
+  </data>
+  <data name="CollectionMINUS_DIName" xml:space="preserve">
+    <value>MINUS_DI</value>
+  </data>
+  <data name="CollectionMINUS_DMName" xml:space="preserve">
+    <value>MINUS_DM</value>
+  </data>
+  <data name="CollectionMOMName" xml:space="preserve">
+    <value>MOM</value>
+  </data>
+  <data name="CollectionName" xml:space="preserve">
+    <value>name</value>
+  </data>
+  <data name="CollectionNATRName" xml:space="preserve">
+    <value>NATR</value>
+  </data>
+  <data name="CollectionOBVName" xml:space="preserve">
+    <value>OBV</value>
+  </data>
+  <data name="CollectionPLUS_DIName" xml:space="preserve">
+    <value>PLUS_DI</value>
+  </data>
+  <data name="CollectionPLUS_DMName" xml:space="preserve">
+    <value>PLUS_DM</value>
+  </data>
+  <data name="CollectionPPOName" xml:space="preserve">
+    <value>PPO</value>
+  </data>
+  <data name="CollectionROCName" xml:space="preserve">
+    <value>ROC</value>
+  </data>
+  <data name="CollectionROCRName" xml:space="preserve">
+    <value>ROCR</value>
+  </data>
+  <data name="CollectionRSIName" xml:space="preserve">
+    <value>RSI</value>
+  </data>
+  <data name="CollectionSARName" xml:space="preserve">
+    <value>SAR</value>
+  </data>
+  <data name="CollectionSMAName" xml:space="preserve">
+    <value>SMA</value>
+  </data>
+  <data name="CollectionSTOCHFName" xml:space="preserve">
+    <value>STOCHF</value>
+  </data>
+  <data name="CollectionSTOCHName" xml:space="preserve">
+    <value>STOCH</value>
+  </data>
+  <data name="CollectionSTOCHRSIName" xml:space="preserve">
+    <value>STOCHRSI</value>
+  </data>
+  <data name="CollectionT3Name" xml:space="preserve">
+    <value>T3</value>
+  </data>
+  <data name="CollectionTEMAName" xml:space="preserve">
+    <value>TEMA</value>
+  </data>
+  <data name="CollectionTRANGEName" xml:space="preserve">
+    <value>TRANGE</value>
+  </data>
+  <data name="CollectionTRIMAName" xml:space="preserve">
+    <value>TRIMA</value>
+  </data>
+  <data name="CollectionTRIXName" xml:space="preserve">
+    <value>TRIX</value>
+  </data>
+  <data name="CollectionULTOSCName" xml:space="preserve">
+    <value>ULTOSC</value>
+  </data>
+  <data name="CollectionVWAPName" xml:space="preserve">
+    <value>VWAP</value>
+  </data>
+  <data name="CollectionWILLRName" xml:space="preserve">
+    <value>WILLR</value>
+  </data>
+  <data name="CollectionWMAName" xml:space="preserve">
+    <value>WMA</value>
+  </data>
+  <data name="DatabaseName" xml:space="preserve">
+    <value>AlphaVantageDb</value>
+  </data>
+</root>

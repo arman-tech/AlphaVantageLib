@@ -1,0 +1,377 @@
+{
+  "version": "0.0.5",
+  "max-concurrent-thread": 6,
+  "max-download-retries": 4,
+  "retry-delay-millisec": 1000,
+  "api-calls-per-minute-allowed": 30,
+  "exchanges": [
+    "S&P500",
+    "TSX"
+  ],
+  "uris": [
+
+    {
+      "id": "6695eba5-61b4-4ec3-9168-ff4b5ac7114e",
+      "uri": "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=5min&outputsize=full&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "1fc88482-f51d-4583-a5d5-2cd80f31bdff",
+      "uri": "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=MSFT&outputsize=full&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "fbdd6f06-7682-4900-a37a-79049b739e0d",
+      "uri": "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=MSFT&outputsize=full&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "2207e4ae-f61d-4080-935b-84e37e28013f",
+      "uri": "https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol=MSFT&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "4b45090d-8046-4680-928d-fb48a761c1e3",
+      "uri": "https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY_ADJUSTED&symbol=MSFT&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "fa8250cc-b125-49cd-8ff9-832cd3ffd313",
+      "uri": "https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=MSFT&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "ba9aab7b-9f47-49a6-b36a-dde16815d3b8",
+      "uri": "https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY_ADJUSTED&symbol=MSFT&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "10969722-c579-426e-a961-1db6a937f2aa",
+      "uri": "https://www.alphavantage.co/query?function=SMA&symbol=MSFT&interval=weekly&time_period=10&series_type=open&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "62101059-932e-476b-a6f8-3a4024e75d22",
+      "uri": "https://www.alphavantage.co/query?function=EMA&symbol=MSFT&interval=weekly&time_period=10&series_type=open&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "02c58598-f666-480b-9f73-067549191b6d",
+      "uri": "https://www.alphavantage.co/query?function=WMA&symbol=MSFT&interval=weekly&time_period=10&series_type=open&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "6b09789b-bb82-4081-9b4f-1bb89e24d6c4",
+      "uri": "https://www.alphavantage.co/query?function=DEMA&symbol=MSFT&interval=weekly&time_period=10&series_type=open&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "04bd9540-d180-4bf7-bb21-9db5bce95064",
+      "uri": "https://www.alphavantage.co/query?function=TEMA&symbol=MSFT&interval=weekly&time_period=10&series_type=open&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "fe934f78-4655-45a8-a46f-4d65a03db680",
+      "uri": "https://www.alphavantage.co/query?function=TRIMA&symbol=MSFT&interval=weekly&time_period=10&series_type=open&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "11eb3151-85fc-4bbb-9d86-497149f75008",
+      "uri": "https://www.alphavantage.co/query?function=KAMA&symbol=MSFT&interval=weekly&time_period=10&series_type=open&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "7c99d918-8af1-4eb2-a1ca-78573cf75947",
+      "uri": "https://www.alphavantage.co/query?function=MAMA&symbol=MSFT&interval=daily&series_type=close&fastlimit=0.02&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "dca4d526-605f-45c5-afb5-3c0f402d1e89",
+      "uri": "https://www.alphavantage.co/query?function=VWAP&symbol=MSFT&interval=15min&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "a55c8db6-f899-4f54-a9b0-9b66f4092ef3",
+      "uri": "https://www.alphavantage.co/query?function=T3&symbol=MSFT&interval=weekly&time_period=10&series_type=open&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "4518a8d5-f9bd-44d2-abaa-7a32ddd3992d",
+      "uri": "https://www.alphavantage.co/query?function=MACD&symbol=MSFT&interval=daily&series_type=open&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "d33003b9-4b0f-429c-8ebc-eebeac74e896",
+      "uri": "https://www.alphavantage.co/query?function=MACDEXT&symbol=MSFT&interval=daily&series_type=open&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "57ae6869-50d9-4bfc-a99f-a1682d4b98a2",
+      "uri": "https://www.alphavantage.co/query?function=STOCH&symbol=MSFT&interval=daily&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "f5fb0a9e-393d-4206-89d6-eaf98ca4ef09",
+      "uri": "https://www.alphavantage.co/query?function=STOCHF&symbol=MSFT&interval=daily&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "0c7a4e4f-74b0-4a02-8fcf-06b6cd58937f",
+      "uri": "https://www.alphavantage.co/query?function=RSI&symbol=MSFT&interval=weekly&time_period=10&series_type=open&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "0138757b-326f-43a0-9f43-2536aaca5439",
+      "uri": "https://www.alphavantage.co/query?function=STOCHRSI&symbol=MSFT&interval=daily&time_period=10&series_type=close&fastkperiod=6&fastdmatype=1&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "6036db6b-a005-45b5-bbac-8ea9f8a3b27c",
+      "uri": "https://www.alphavantage.co/query?function=WILLR&symbol=MSFT&interval=daily&time_period=10&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "b77a3cd5-27dd-44b9-a234-2262f68adc2e",
+      "uri": "https://www.alphavantage.co/query?function=ADX&symbol=MSFT&interval=daily&time_period=10&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "689b18a2-1b11-4b5b-b78a-2ef31f393324",
+      "uri": "https://www.alphavantage.co/query?function=ADXR&symbol=MSFT&interval=daily&time_period=10&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "357519d6-e8fe-4d55-9fcd-2b7713fb438d",
+      "uri": "https://www.alphavantage.co/query?function=APO&symbol=MSFT&interval=daily&series_type=close&fastperiod=10&matype=1&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "79c98ea1-78fe-4116-8b8c-b5b2859185ce",
+      "uri": "https://www.alphavantage.co/query?function=PPO&symbol=MSFT&interval=daily&series_type=close&fastperiod=10&matype=1&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "87bed9dd-ecd5-47cc-a17e-be413bbc7226",
+      "uri": "https://www.alphavantage.co/query?function=MOM&symbol=MSFT&interval=daily&time_period=10&series_type=close&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "3f02080b-3adb-49ec-b99a-6ffdab1db358",
+      "uri": "https://www.alphavantage.co/query?function=BOP&symbol=MSFT&interval=daily&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "4fc56255-341b-4654-af47-22d1bca423d5",
+      "uri": "https://www.alphavantage.co/query?function=CCI&symbol=MSFT&interval=daily&time_period=10&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "93e1bd39-6a86-4f29-a090-14bd48191dd4",
+      "uri": "https://www.alphavantage.co/query?function=CMO&symbol=MSFT&interval=weekly&time_period=10&series_type=close&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "ab6be787-7379-4bc1-9263-c66ef91ba01b",
+      "uri": "https://www.alphavantage.co/query?function=ROC&symbol=MSFT&interval=weekly&time_period=10&series_type=close&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "67492788-128b-4690-80dc-18e16e817c30",
+      "uri": "https://www.alphavantage.co/query?function=ROCR&symbol=MSFT&interval=daily&time_period=10&series_type=close&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "30edfb46-1adb-4078-af4b-933dead40ffc",
+      "uri": "https://www.alphavantage.co/query?function=AROON&symbol=MSFT&interval=daily&time_period=14&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "6bfbe214-b03a-48c7-8082-64805d29115d",
+      "uri": "https://www.alphavantage.co/query?function=AROONOSC&symbol=MSFT&interval=daily&time_period=10&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "673b4ca4-c986-4db8-bb6c-45f574f9d37a",
+      "uri": "https://www.alphavantage.co/query?function=MFI&symbol=MSFT&interval=weekly&time_period=10&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "1be35267-0121-495a-b6b2-9e649beadd1d",
+      "uri": "https://www.alphavantage.co/query?function=TRIX&symbol=MSFT&interval=daily&time_period=10&series_type=close&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "08d16d98-b135-4eb6-9d1e-38eae62fb569",
+      "uri": "https://www.alphavantage.co/query?function=ULTOSC&symbol=MSFT&interval=daily&timeperiod1=8&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "94d592e4-b84f-4fa7-8371-edfbe5e7e2ff",
+      "uri": "https://www.alphavantage.co/query?function=DX&symbol=MSFT&interval=daily&time_period=10&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "acf029e2-bf44-4c52-9b37-948507f213f8",
+      "uri": "https://www.alphavantage.co/query?function=MINUS_DI&symbol=MSFT&interval=weekly&time_period=10&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "48f06d70-c9aa-4ab0-8e3c-547e323f33ed",
+      "uri": "https://www.alphavantage.co/query?function=PLUS_DI&symbol=MSFT&interval=daily&time_period=10&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "b77756d9-16dd-4328-a4d5-610822b5ff2a",
+      "uri": "https://www.alphavantage.co/query?function=MINUS_DM&symbol=MSFT&interval=daily&time_period=10&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "2f204c69-a746-487e-9944-9c4d32b46680",
+      "uri": "https://www.alphavantage.co/query?function=PLUS_DM&symbol=MSFT&interval=daily&time_period=10&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "288e1446-d9ce-4e6c-a613-6e4718ce2764",
+      "uri": "https://www.alphavantage.co/query?function=BBANDS&symbol=MSFT&interval=weekly&time_period=5&series_type=close&nbdevup=3&nbdevdn=3&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "a314a89c-77f9-4d1f-84cc-96dbcd3f7bb6",
+      "uri": "https://www.alphavantage.co/query?function=MIDPOINT&symbol=MSFT&interval=daily&time_period=10&series_type=close&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "d4f1f8d1-53f9-46fb-aca9-86f6db546287",
+      "uri": "https://www.alphavantage.co/query?function=MIDPRICE&symbol=MSFT&interval=daily&time_period=10&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "f07db32c-69b1-4c47-8247-56ee7e39b6b7",
+      "uri": "https://www.alphavantage.co/query?function=SAR&symbol=MSFT&interval=weekly&acceleration=0.05&maximum=0.25&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "677fea68-10c2-4034-855a-cb091f84e84a",
+      "uri": "https://www.alphavantage.co/query?function=TRANGE&symbol=MSFT&interval=daily&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "a6bb1a12-0b8d-4923-ab33-c07c2e8ff512",
+      "uri": "https://www.alphavantage.co/query?function=ATR&symbol=MSFT&interval=daily&time_period=14&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "0b84c638-c7dc-4bfd-b9aa-604dd4ba9344",
+      "uri": "https://www.alphavantage.co/query?function=NATR&symbol=MSFT&interval=weekly&time_period=14&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "6f3ea9ad-98c6-4f45-8c92-a3f50967b16f",
+      "uri": "https://www.alphavantage.co/query?function=AD&symbol=MSFT&interval=daily&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "1b5190f3-318f-4a8a-ab5c-a907a3cec98a",
+      "uri": "https://www.alphavantage.co/query?function=ADOSC&symbol=MSFT&interval=daily&fastperiod=5&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "3616d510-5aaa-47b8-aa0c-d8a03d5eb25c",
+      "uri": "https://www.alphavantage.co/query?function=OBV&symbol=MSFT&interval=weekly&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "1c41bb34-50e4-46d6-9a2e-00e1ed5297fb",
+      "uri": "https://www.alphavantage.co/query?function=HT_TRENDLINE&symbol=MSFT&interval=daily&series_type=close&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "a3757743-7416-418e-82de-7899e5f10f1f",
+      "uri": "https://www.alphavantage.co/query?function=HT_SINE&symbol=MSFT&interval=daily&series_type=close&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "d2a6a2b6-d0b4-49ae-9151-834cc30b7275",
+      "uri": "https://www.alphavantage.co/query?function=HT_TRENDMODE&symbol=MSFT&interval=weekly&series_type=close&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "ed0faae0-1084-4a9b-8f5e-9fa534a9c0e0",
+      "uri": "https://www.alphavantage.co/query?function=HT_DCPERIOD&symbol=MSFT&interval=daily&series_type=close&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "1726ac14-9458-4aea-935f-c8292be30cb4",
+      "uri": "https://www.alphavantage.co/query?function=HT_DCPHASE&symbol=MSFT&interval=daily&series_type=close&apikey=demo",
+      "country": "US"
+    },
+
+    {
+      "id": "bd5012c9-ab60-482c-ad6b-5c9df65c9f26",
+      "uri": "https://www.alphavantage.co/query?function=HT_PHASOR&symbol=MSFT&interval=weekly&series_type=close&apikey=demo",
+      "country": "US"
+    }
+
+  ]
+}
+
+// 23400 seconds in a stock market day.
+

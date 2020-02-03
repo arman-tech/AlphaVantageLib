@@ -1,0 +1,566 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="CommonRes.Designer.cs">
+      <DependentUpon>CommonRes.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\ADOSC\AvADOSCRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvADOSCRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\ADXR\AvADXRRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvADXRRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\ADX\AvADXRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvADXRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\AD\AvADRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvADRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\APO\AvAPORes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvAPORes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\AROONOSC\AvAROONOSCRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvAROONOSCRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\AROON\AvAROONRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvAROONRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\ATR\AvATRRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvATRRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\BBANDS\AvBBANDSRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvBBANDSRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\BOP\AvBOPRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvBOPRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\CCI\AvCCIRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvCCIRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\CMO\AvCMORes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvCMORes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\DEMA\AvDEMARes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvDEMARes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\DX\AvDXRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvDXRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\EMA\AvEMARes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvEMARes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\HT_DCPERIOD\AvHT_DCPERIODRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvHT_DCPERIODRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\HT_DCPHASE\AvHT_DCPHASERes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvHT_DCPHASERes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\HT_PHASOR\AvHT_PHASORRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvHT_PHASORRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\HT_SINE\AvHT_SINERes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvHT_SINERes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\HT_TRENDLINE\AvHT_TRENDLINERes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvHT_TRENDLINERes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\HT_TRENDMODE\AvHT_TRENDMODERes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvHT_TRENDMODERes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\KAMA\AvKAMARes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvKAMARes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\MACDEXT\AvMACDEXTRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMACDEXTRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\MACD\AvMACDRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMACDRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\MAMA\AvMAMARes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMAMARes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\MFI\AvMFIRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMFIRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\MIDPOINT\AvMIDPOINTRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMIDPOINTRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\MIDPRICE\AvMIDPRICERes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMIDPRICERes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\MINUS_DI\AvMINUS_DIRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMINUS_DIRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\MINUS_DM\AvMINUS_DMRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMINUS_DMRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\MOM\AvMOMRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMOMRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\NATR\AvNATRRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvNATRRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\OBV\AvOBVRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvOBVRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\PLUS_DI\AvPLUS_DIRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvPLUS_DIRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\PLUS_DM\AvPLUS_DMRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvPLUS_DMRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\PPO\AvPPORes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvPPORes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\ROCR\AvROCRRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvROCRRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\ROC\AvROCRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvROCRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\RSI\AvRSIRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvRSIRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\SAR\AvSARRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvSARRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\SMA\AvSMARes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvSMARes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\STOCHF\AvSTOCHFRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvSTOCHFRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\STOCHRSI\AvSTOCHRSIRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvSTOCHRSIRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\STOCH\AvSTOCHRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvSTOCHRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\T3\AvT3Res.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvT3Res.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\TEMA\AvTEMARes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvTEMARes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\TRANGE\AvTRANGERes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvTRANGERes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\TRIMA\AvTRIMARes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvTRIMARes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\TRIX\AvTRIXRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvTRIXRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\ULTOSC\AvULTOSCRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvULTOSCRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\VWAP\AvVWAPRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvVWAPRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\WILLR\AvWILLRRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvWILLRRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TechnicalIndicators\WMA\AvWMARes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvWMARes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TimeSeries\DailyAdjusted\DailyAdjTimeSeriesRes.Designer.cs">
+      <DependentUpon>DailyAdjTimeSeriesRes.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Models\TimeSeries\Daily\AvDailyTimeSeriesRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvDailyTimeSeriesRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TimeSeries\IntraDay\AvIntraDayTimeSeriesRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvIntraDayTimeSeriesRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TimeSeries\MonthlyAdjusted\AvMonthlyAdjTimeSeriesRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMonthlyAdjTimeSeriesRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TimeSeries\Monthly\AvMonthlyTimeSeriesRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMonthlyTimeSeriesRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TimeSeries\WeeklyAdjusted\AvWeeklyAdjTimeSeriesRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvWeeklyAdjTimeSeriesRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Models\TimeSeries\Weekly\AvWeeklyTimeSeriesRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvWeeklyTimeSeriesRes.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="CommonRes.resx">
+      <LastGenOutput>CommonRes.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\ADOSC\AvADOSCRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvADOSCRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\ADXR\AvADXRRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvADXRRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\ADX\AvADXRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvADXRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\AD\AvADRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvADRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\APO\AvAPORes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvAPORes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\AROONOSC\AvAROONOSCRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvAROONOSCRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\AROON\AvAROONRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvAROONRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\ATR\AvATRRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvATRRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\BBANDS\AvBBANDSRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvBBANDSRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\BOP\AvBOPRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvBOPRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\CCI\AvCCIRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvCCIRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\CMO\AvCMORes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvCMORes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\DEMA\AvDEMARes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvDEMARes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\DX\AvDXRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvDXRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\EMA\AvEMARes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvEMARes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\HT_DCPERIOD\AvHT_DCPERIODRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvHT_DCPERIODRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\HT_DCPHASE\AvHT_DCPHASERes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvHT_DCPHASERes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\HT_PHASOR\AvHT_PHASORRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvHT_PHASORRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\HT_SINE\AvHT_SINERes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvHT_SINERes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\HT_TRENDLINE\AvHT_TRENDLINERes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvHT_TRENDLINERes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\HT_TRENDMODE\AvHT_TRENDMODERes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvHT_TRENDMODERes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\KAMA\AvKAMARes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvKAMARes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\MACDEXT\AvMACDEXTRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMACDEXTRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\MACD\AvMACDRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMACDRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\MAMA\AvMAMARes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMAMARes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\MFI\AvMFIRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMFIRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\MIDPOINT\AvMIDPOINTRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMIDPOINTRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\MIDPRICE\AvMIDPRICERes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMIDPRICERes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\MINUS_DI\AvMINUS_DIRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMINUS_DIRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\MINUS_DM\AvMINUS_DMRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMINUS_DMRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\MOM\AvMOMRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMOMRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\NATR\AvNATRRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvNATRRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\OBV\AvOBVRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvOBVRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\PLUS_DI\AvPLUS_DIRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvPLUS_DIRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\PLUS_DM\AvPLUS_DMRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvPLUS_DMRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\PPO\AvPPORes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvPPORes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\ROCR\AvROCRRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvROCRRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\ROC\AvROCRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvROCRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\RSI\AvRSIRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvRSIRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\SAR\AvSARRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvSARRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\SMA\AvSMARes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvSMARes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\STOCHF\AvSTOCHFRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvSTOCHFRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\STOCHRSI\AvSTOCHRSIRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvSTOCHRSIRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\STOCH\AvSTOCHRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvSTOCHRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\T3\AvT3Res.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvT3Res.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\TEMA\AvTEMARes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvTEMARes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\TRANGE\AvTRANGERes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvTRANGERes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\TRIMA\AvTRIMARes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvTRIMARes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\TRIX\AvTRIXRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvTRIXRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\ULTOSC\AvULTOSCRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvULTOSCRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\VWAP\AvVWAPRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvVWAPRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\WILLR\AvWILLRRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvWILLRRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TechnicalIndicators\WMA\AvWMARes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvWMARes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TimeSeries\DailyAdjusted\DailyAdjTimeSeriesRes.resx">
+      <LastGenOutput>DailyAdjTimeSeriesRes.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TimeSeries\Daily\AvDailyTimeSeriesRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvDailyTimeSeriesRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TimeSeries\IntraDay\AvIntraDayTimeSeriesRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvIntraDayTimeSeriesRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TimeSeries\MonthlyAdjusted\AvMonthlyAdjTimeSeriesRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMonthlyAdjTimeSeriesRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TimeSeries\Monthly\AvMonthlyTimeSeriesRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMonthlyTimeSeriesRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TimeSeries\WeeklyAdjusted\AvWeeklyAdjTimeSeriesRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvWeeklyAdjTimeSeriesRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\TimeSeries\Weekly\AvWeeklyTimeSeriesRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvWeeklyTimeSeriesRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

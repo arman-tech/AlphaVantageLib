@@ -1,0 +1,593 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\**" />
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Common\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Common\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Common\CommonProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CommonProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DownloadWithRetry.cs" />
+    <Compile Include="Common\CoreHelper.cs" />
+    <Compile Include="Common\SystemConfig.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Common\CommonProcessRes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AlphaVantage.Common\AlphaVantage.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="TechnicalIndicators\ADOSC\AvADOSCProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvADOSCProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\ADXR\AvADXRProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvADXRProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\ADX\AvADXProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvADXProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\AD\AvADProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvADProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\APO\AvAPOProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvAPOProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\AROONOSC\AvAROONOSCProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvAROONOSCProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\AROON\AvAROONProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvAROONProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\ATR\AvATRProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvATRProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\BBANDS\AvBBANDSProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvBBANDSProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\BOP\AvBOPProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvBOPProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\CCI\AvCCIProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvCCIProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\CMO\AvCMOProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvCMOProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\DEMA\AvDEMAProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvDEMAProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\DX\AvDXProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvDXProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\EMA\AvEMAProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvEMAProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\HT_DCPERIOD\AvHT_DCPERIODProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvHT_DCPERIODProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\HT_DCPHASE\AvHT_DCPHASEProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvHT_DCPHASEProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\HT_PHASOR\AvHT_PHASORProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvHT_PHASORProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\HT_SINE\AvHT_SINEProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvHT_SINEProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\HT_TRENDLINE\AvHT_TRENDLINEProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvHT_TRENDLINEProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\HT_TRENDMODE\AvHT_TRENDMODEProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvHT_TRENDMODEProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\KAMA\AvKAMAProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvKAMAProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\MACDEXT\AvMACDEXTProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMACDEXTProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\MACD\AvMACDProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMACDProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\MAMA\AvMAMAProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMAMAProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\MFI\AvMFIProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMFIProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\MIDPOINT\AvMIDPOINTProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMIDPOINTProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\MIDPRICE\AvMIDPRICEProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMIDPRICEProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\MINUS_DI\AvMINUS_DIProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMINUS_DIProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\MINUS_DM\AvMINUS_DMProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMINUS_DMProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\MOM\AvMOMProcessres.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMOMProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\NATR\AvNATRProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvNATRProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\OBV\AvOBVProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvOBVProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\PLUS_DI\AvPLUS_DIProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvPLUS_DIProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\PLUS_DM\AvPLUS_DMProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvPLUS_DMProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\PPO\AvPPOProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvPPOProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\ROCR\AvROCRProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvROCRProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\ROC\AvROCProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvROCProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\SAR\AvSARProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvSARProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\SMA\AvSMAProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvSMAProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\STOCHF\AvSTOCHFProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvSTOCHFProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\STOCHRSI\AvSTOTCHRSIProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvSTOTCHRSIProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\STOCH\AvSTOCHProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvSTOCHProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\T3\AvT3ProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvT3ProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\TEMA\AvTEMAProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvTEMAProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\TRANGE\AvTRANGEProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvTRANGEProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\TRIMA\AvTRIMAProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvTRIMAProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\TRIX\AvTRIXProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvTRIXProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\ULTOSC\AvULTOSCProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvULTOSCProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\VWAP\AvVWAPProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvVWAPProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\WILLR\AvWILLRProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvWILLRProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\WMA\AvWMAProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvWMAProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TimeSeries\DailyAdjusted\AvDailyAdjTimeSeriesProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvDailyAdjTimeSeriesProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TimeSeries\Daily\AvDailyTimeSeriesProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvDailyTimeSeriesProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TimeSeries\IntraDay\AvIntraDayTimeSeriesProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvIntraDayTimeSeriesProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TimeSeries\MonthlyAdjusted\AvMonthlyAdjTimeSeriesProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMonthlyAdjTimeSeriesProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TimeSeries\Monthly\AvMonthlyTimeSeriesProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvMonthlyTimeSeriesProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TechnicalIndicators\RSI\AvRSIProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvRSIProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TimeSeries\WeeklyAdjusted\AvWeeklyAdjTimeSeriesProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvWeeklyAdjTimeSeriesProcessRes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TimeSeries\Weekly\AvWeeklyTimeSeriesProcessRes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AvWeeklyTimeSeriesProcessRes.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="TechnicalIndicators\ADOSC\AvADOSCProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvADOSCProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\ADXR\AvADXRProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvADXRProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\ADX\AvADXProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvADXProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\AD\AvADProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvADProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\APO\AvAPOProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvAPOProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\AROONOSC\AvAROONOSCProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvAROONOSCProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\AROON\AvAROONProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvAROONProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\ATR\AvATRProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvATRProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\BBANDS\AvBBANDSProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvBBANDSProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\BOP\AvBOPProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvBOPProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\CCI\AvCCIProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvCCIProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\CMO\AvCMOProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvCMOProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\DEMA\AvDEMAProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvDEMAProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\DX\AvDXProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvDXProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\EMA\AvEMAProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvEMAProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\HT_DCPERIOD\AvHT_DCPERIODProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvHT_DCPERIODProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\HT_DCPHASE\AvHT_DCPHASEProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvHT_DCPHASEProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\HT_PHASOR\AvHT_PHASORProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvHT_PHASORProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\HT_SINE\AvHT_SINEProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvHT_SINEProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\HT_TRENDLINE\AvHT_TRENDLINEProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvHT_TRENDLINEProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\HT_TRENDMODE\AvHT_TRENDMODEProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvHT_TRENDMODEProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\KAMA\AvKAMAProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvKAMAProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\MACDEXT\AvMACDEXTProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMACDEXTProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\MACD\AvMACDProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMACDProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\MAMA\AvMAMAProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMAMAProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\MFI\AvMFIProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMFIProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\MIDPOINT\AvMIDPOINTProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMIDPOINTProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\MIDPRICE\AvMIDPRICEProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMIDPRICEProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\MINUS_DI\AvMINUS_DIProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMINUS_DIProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\MINUS_DM\AvMINUS_DMProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMINUS_DMProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\MOM\AvMOMProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMOMProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\NATR\AvNATRProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvNATRProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\OBV\AvOBVProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvOBVProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\PLUS_DI\AvPLUS_DIProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvPLUS_DIProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\PLUS_DM\AvPLUS_DMProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvPLUS_DMProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\PPO\AvPPOProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvPPOProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\ROCR\AvROCRProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvROCRProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\ROC\AvROCProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvROCProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\SAR\AvSARProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvSARProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\SMA\AvSMAProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvSMAProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\STOCHF\AvSTOCHFProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvSTOCHFProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\STOCHRSI\AvSTOTCHRSIProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvSTOTCHRSIProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\STOCH\AvSTOCHProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvSTOCHProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\T3\AvT3ProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvT3ProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\TEMA\AvTEMAProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvTEMAProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\TRANGE\AvTRANGEProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvTRANGEProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\TRIMA\AvTRIMAProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvTRIMAProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\TRIX\AvTRIXProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvTRIXProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\ULTOSC\AvULTOSCProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvULTOSCProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\VWAP\AvVWAPProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvVWAPProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\WILLR\AvWILLRProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvWILLRProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\WMA\AvWMAProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvWMAProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TimeSeries\DailyAdjusted\AvDailyAdjTimeSeriesProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvDailyAdjTimeSeriesProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TimeSeries\Daily\AvDailyTimeSeriesProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvDailyTimeSeriesProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TimeSeries\IntraDay\AvIntraDayTimeSeriesProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvIntraDayTimeSeriesProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TimeSeries\MonthlyAdjusted\AvMonthlyAdjTimeSeriesProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMonthlyAdjTimeSeriesProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TimeSeries\Monthly\AvMonthlyTimeSeriesProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvMonthlyTimeSeriesProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TechnicalIndicators\RSI\AvRSIProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvRSIProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TimeSeries\WeeklyAdjusted\AvWeeklyAdjTimeSeriesProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvWeeklyAdjTimeSeriesProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TimeSeries\Weekly\AvWeeklyTimeSeriesProcessRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvWeeklyTimeSeriesProcessRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
